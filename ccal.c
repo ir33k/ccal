@@ -1,3 +1,18 @@
+/* Print all days of given year.
+ *
+ * Compilation and usage:
+ *
+ *	$ cc -Wall -Wextra -Wshadow -pedantic -std=c89 -o ccal ccal.c
+ *	$ ./ccal	# Use current year
+ *	$ ./ccal 2023	# Use provided year
+ *	2023.01.01 NI	# Example output
+ *	2023.01.02 po
+ *	2023.01.03 wt
+ *	...
+ *	2023.12.31 NI
+ *
+ * Modify "wday" array to change how day of week is printed.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <err.h>
